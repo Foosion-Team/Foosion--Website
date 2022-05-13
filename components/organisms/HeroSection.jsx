@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
-import Navbar from './Navbar'
+import Navbar from '../organisms/Navbar'
 const HeroSectionContainer = styled.div`
 height:100%;
 background:linear-gradient(rgba(51, 43, 0, 0.4), rgba(51, 43, 0, 0.4)), url(${props => props.img}) repeat;
