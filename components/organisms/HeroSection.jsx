@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
+import Link from 'next/link'
+
+
 import Navbar from '../organisms/Navbar'
 const HeroSectionContainer = styled.div`
 height:100%;
@@ -30,7 +33,7 @@ opacity:0.5;
 `
 
 const HeroSection = () => {
-  let count = 1
+
   const [bg, setBg] = useState(1)
   
 
@@ -54,7 +57,9 @@ const HeroSection = () => {
 
                 <SecondHeadingText>A Thriving Food Network</SecondHeadingText>
                 <Button color='black'>Learn More</Button>
-                <Button color='#FFD500'>Join Us</Button>
+                <Link href='/form'>
+                  <Button color='#FFD500'>Join Us</Button>
+                </Link>
 
               <div className='pt-28 text-center pb-10'>
               <Bgchange onClick={() => setBg(1)} className={ bg === 1 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>

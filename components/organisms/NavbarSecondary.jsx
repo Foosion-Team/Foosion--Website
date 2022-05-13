@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styled from 'styled-components'
 const NavbarContainer = styled.nav`
 `
@@ -14,16 +15,24 @@ letter-spacing:1px;
 }
 `
 const Button = styled.button`
-background: black;
+background: #F1F1F1;
 border-radius:11px;
 font-size:20px;
 font-weight: bold;
 width:190px;
 `
-const Navbar = () => {
+const NavbarSecondary = () => {
   return (
-    <NavbarContainer>
-        <ul className='flex text-white align-middle justify-end'>
+    <NavbarContainer className='flex align-middle justify-between items-center'>
+
+        
+       <Link href='/'>
+           <div className='pt-5'>
+               <Image src='/images/foosion-home.png' width={180} height={60} alt="go" objectFit='contain'></Image>
+           </div>
+       </Link>
+        
+        <ul className='flex text-black'>
             <List>About us</List>
             <List>Vendors</List>
             <List>Join us</List>
@@ -39,4 +48,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarSecondary

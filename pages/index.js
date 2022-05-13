@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 //COMPONENTS
 import HeroSection from '../components/organisms/HeroSection'
-import Farmers from '../components/Forms/Farmers'
 
 export default function Home() {
   return (
@@ -15,9 +14,6 @@ export default function Home() {
       </Head>
 
       <HeroSection></HeroSection>
-
-      <Farmers></Farmers>
-
     </div>
   )
 }
