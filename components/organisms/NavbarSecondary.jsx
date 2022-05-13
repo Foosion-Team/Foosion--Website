@@ -25,7 +25,6 @@ const NavbarSecondary = () => {
   return (
     <NavbarContainer className='flex align-middle justify-between items-center'>
 
-        
        <Link href='/'>
            <div className='pt-5'>
                <Image src='/images/foosion-home.png' width={180} height={60} alt="go" objectFit='contain'></Image>

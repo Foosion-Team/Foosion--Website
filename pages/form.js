@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Farmers from '../components/molecules/Forms/Farmers'
 
 //COMPONENTS
-import HeroSection from '../components/organisms/HeroSection'
+import JoinUs from '../components/organisms/JoinUs'
 
 export default function Form() {
     return (
@@ -14,7 +14,7 @@ export default function Form() {
                 <link rel="icon" href="/images/foosion-logo.png" />
             </Head>
 
-            <Farmers></Farmers>
+            <JoinUs></JoinUs>
         </div>
     )
 }
