@@ -1,10 +1,11 @@
 import React from 'react'
+import Link from 'next/link'
 import styled from 'styled-components'
 const NavbarContainer = styled.nav`
 `
 const List = styled.li`
 margin-right:50px;
-margin-top: 30px;
+margin-top: 35px;
 font-weight: 700;
 font-size:21px;
 letter-spacing:1px;
@@ -26,7 +27,11 @@ const Navbar = () => {
             <List>Vendors</List>
             <List>Join us</List>
             <List>
-                <Button  className='p-4'>Get The App</Button>
+              <Link href='https://play.google.com/store/apps/details?id=com.foosion'>
+                <a target="_blank">
+                  <Button  className='p-4'>Get The App</Button>
+                </a>
+              </Link>
             </List>
         </ul>
     </NavbarContainer>
