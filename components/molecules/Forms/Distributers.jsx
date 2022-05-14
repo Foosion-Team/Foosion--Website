@@ -63,12 +63,12 @@ const Distributors = () => {
             <Input type='text' width='575px' placeholder='Name'  onChange={handleChange} value={distributor.name}/>
           </div>
           <div>
-            <Input width='250px' type='text' placeholder='Farm Size' className='ml-24' onChange={handleChange} value={distributor.workingHours} />
+            <Input width='250px' type='text' placeholder='Working Hours' className='ml-24' onChange={handleChange} value={distributor.workingHours} />
           </div>
         
           <div className='relative'>
             <Select width='275px' className='ml-20' onChange={handleChange} value={distributor.transportType}>
-              <Option value="">Crop Type</Option>
+              <Option value="">Transport Type</Option>
               <Option>Crop Type2s</Option>
               <Option>Crop Type3s</Option>
             </Select>
@@ -79,7 +79,7 @@ const Distributors = () => {
 
         <div className='pt-10 flex'>
           <Input width="575px" placeholder='Email Address' onChange={handleChange} value={distributor.email}/>
-          <Input width="450px" placeholder='Farm Location' className='ml-24' onChange={handleChange} value={distributor.depatureLocation}/>
+          <Input width="450px" placeholder='Depature Location' className='ml-24' onChange={handleChange} value={distributor.depatureLocation}/>
         </div>
 
         <div className='pt-10 flex'>

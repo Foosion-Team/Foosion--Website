@@ -63,12 +63,12 @@ const Retailers = () => {
             <Input type='text' width='575px' placeholder='Name'  onChange={handleChange} value={retailer.name}/>
           </div>
           <div>
-            <Input width='250px' type='text' placeholder='Farm Size' className='ml-24' onChange={handleChange} value={retailer.workingHours} />
+            <Input width='250px' type='text' placeholder='Working Hours' className='ml-24' onChange={handleChange} value={retailer.workingHours} />
           </div>
         
           <div className='relative'>
             <Select width='275px' className='ml-20' onChange={handleChange} value={retailer.recipes}>
-              <Option value="">Crop Type</Option>
+              <Option value="">Recipes</Option>
               <Option>Crop Type2s</Option>
               <Option>Crop Type3s</Option>
             </Select>
@@ -79,7 +79,7 @@ const Retailers = () => {
 
         <div className='pt-10 flex'>
           <Input width="575px" placeholder='Email Address' onChange={handleChange} value={retailer.email}/>
-          <Input width="450px" placeholder='Farm Location' className='ml-24' onChange={handleChange} value={retailer.itemsSold}/>
+          <Input width="450px" placeholder='Items Sold' className='ml-24' onChange={handleChange} value={retailer.itemsSold}/>
         </div>
 
         <div className='pt-10 flex'>
