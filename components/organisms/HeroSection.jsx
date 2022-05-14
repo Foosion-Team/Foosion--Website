@@ -13,7 +13,7 @@ background-size:cover;
 `
 const SecondHeadingText = styled.h2`
 font: normal normal 900 85px/85px Segoe UI;
-width:60%;
+width:67%;
 `
 const Button = styled.button`
 opacity:0.9;
@@ -35,7 +35,8 @@ opacity:0.5;
 const HeroSection = () => {
 
   const [bg, setBg] = useState(1)
-  
+
+  const text = ['nil', 'A Thriving Food Network', "A Mix of the Market", "Restocking Shelves", "Sourcing From the Ground Up","Connectong you to Stores Round you", "Connectong You to Stores Round You", "All Fresh Fruits", "Making Agriculture Smarter"]
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +56,7 @@ const HeroSection = () => {
                     <Image src='/images/foosion-home-logo.png' width={291} height={117} alt="go" ></Image>
                 </div>
 
-                <SecondHeadingText>A Thriving Food Network</SecondHeadingText>
+                <SecondHeadingText>{text[bg]}</SecondHeadingText>
                 <Button color='black'>Learn More</Button>
                 <Link href='/form'>
                   <Button color='#FFD500'>Join Us</Button>
