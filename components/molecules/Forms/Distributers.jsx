@@ -37,8 +37,22 @@ font: normal normal 600 20px/30px Segoe UI;
 background: #FFD500 0% 0% no-repeat padding-box;
 border-radius: 11px;
 `
-const Distributers = () => {
-
+const Distributors = () => {
+  const [distributor, setDistributor ] = useState({
+    name: '',
+    workingHours: '',
+    transportType: '',
+    email: '',
+    depatureLocation: '',
+    phone: '',
+    yield: '',
+    identity: ''
+  })
+  const handleChange = (e) => {
+    const name = e.target.name
+    const value = e.target.value
+    setDistributor({...distributor, [name]: value})
+  }
   return (
     <div>
       
@@ -46,15 +60,15 @@ const Distributers = () => {
         <div className='flex'>
           
           <div> 
-            <Input type='text' width='575px' placeholder='Name'  />
+            <Input type='text' width='575px' placeholder='Name'  onChange={handleChange} value={distributor.name}/>
           </div>
           <div>
-            <Input width='250px' type='text' placeholder='Working Hours' className='ml-24' />
+            <Input width='250px' type='text' placeholder='Farm Size' className='ml-24' onChange={handleChange} value={distributor.workingHours} />
           </div>
         
           <div className='relative'>
-            <Select width='275px' className='ml-20'>
-              <Option value="">Transport Type</Option>
+            <Select width='275px' className='ml-20' onChange={handleChange} value={distributor.transportType}>
+              <Option value="">Crop Type</Option>
               <Option>Crop Type2s</Option>
               <Option>Crop Type3s</Option>
             </Select>
@@ -64,17 +78,17 @@ const Distributers = () => {
         </div>
 
         <div className='pt-10 flex'>
-          <Input width="575px" placeholder='Email Address'/>
-          <Input width="450px" placeholder='Depature Location' className='ml-24'/>
+          <Input width="575px" placeholder='Email Address' onChange={handleChange} value={distributor.email}/>
+          <Input width="450px" placeholder='Farm Location' className='ml-24' onChange={handleChange} value={distributor.depatureLocation}/>
         </div>
 
         <div className='pt-10 flex'>
           <div>
-            <Input width="350px" placeholder='Tel Phone'/>
+            <Input width="350px" placeholder='Tel Phone' onChange={handleChange} value={distributor.phone}/>
           </div>
           
           <div className='relative'>
-            <Select width='200px' className='ml-8'>
+            <Select width='200px' className='ml-8' onChange={handleChange} value={distributor.yield}>
               <Option value="">Yield / Month</Option>
               <Option>Crop Type2s</Option>
               <Option>Crop Type3s</Option>
@@ -85,7 +99,7 @@ const Distributers = () => {
           <div className='relative ml-24'>
             <label class="custom-file-upload">
               <img src="/images/interface/upload.svg" alt='icon' className='absolute top-1/3 right-8 w-10' />
-              <input type="file"/>
+              <input type="file" onChange={handleChange} value={distributor.identity}/>
               Means of Identification
            </label>
           </div>       
@@ -105,4 +119,4 @@ const Distributers = () => {
   )
 }
 
-export default Distributers
+export default Distributors
