@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components'
+import MobileMenu from '../molecules/MobileMenu'
 const NavbarContainer = styled.nav`
 `
 const List = styled.li`
@@ -21,29 +22,58 @@ font-size:20px;
 font-weight: bold;
 width:190px;
 `
+const HamMenu = styled.div`
+    display: flex;
+    margin: 10px 0px 10px 7px;
+    width: 35px;
+    height: 4px;
+    background: black;
+    &:nth-child(2){
+        width: 25px;
+    }
+    @media (max-width: 1024px) {
+        margin: 10px 0px 10px 7px;
+    }
+    @media (max-width: 550px) {
+        margin: 10px 0px 10px 10px;
+    }
+`
 const NavbarSecondary = () => {
+    const [show, setShow] = useState(false)
   return (
-    <NavbarContainer className='flex align-middle justify-between items-center'>
+    <div>
+      
+      { show &&  <MobileMenu close={setShow}></MobileMenu> }
+        <NavbarContainer className='flex align-middle justify-between items-center'>
 
        <Link href='/'>
-           <div className='pt-5'>
+           <div className='pt-5 cursor-pointer'>
                <Image src='/images/foosion-home.png' width={180} height={60} alt="go" objectFit='contain'></Image>
            </div>
        </Link>
         
-        <ul className='flex text-black'>
-            <List>About us</List>
-            <List>Vendors</List>
-            <List>Join us</List>
-            <List>
+        <ul className='flex text-white align-middle justify-end'>
+            <ul className='hidden xl:flex align-middle justify-end'>
+              <List>About us</List>
+              <List>Vendors</List>
+              <List>Join us</List>
+              <List>
               <Link href='https://play.google.com/store/apps/details?id=com.foosion'>
                 <a target="_blank">
                   <Button  className='p-4'>Get The App</Button>
                 </a>
               </Link>
             </List>
+            </ul>
+            <List className='block xl:hidden' onClick={() => setShow(true)}>
+              <HamMenu></HamMenu>
+              <HamMenu></HamMenu>
+              <HamMenu></HamMenu>
+            </List>
         </ul>
     </NavbarContainer>
+    </div>
+
   )
 }
 
