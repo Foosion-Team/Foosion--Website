@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Farmers from '../components/molecules/Forms/Farmers'
+import MobileMenu from '../components/molecules/MobileMenu'
 
 //COMPONENTS
 import JoinUs from '../components/organisms/JoinUs'
@@ -15,6 +15,7 @@ export default function Form() {
             </Head>
 
             <JoinUs></JoinUs>
+
         </div>
     )
 }

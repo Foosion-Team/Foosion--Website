@@ -14,6 +14,9 @@ letter-spacing:1px;
 &:last-child {
     margin-top: 20px;
 }
+@media (max-width: 550px) {
+  margin-right:25px;
+}
 `
 const Button = styled.button`
 background: #F1F1F1;

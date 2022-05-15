@@ -14,6 +14,18 @@ background-size:cover;
 const SecondHeadingText = styled.h2`
 font: normal normal 900 85px/85px Segoe UI;
 width:67%;
+@media (max-width: 1024px) {
+font: normal normal 900 75px/80px Segoe UI;
+width: 85%;
+}
+@media (max-width: 800px) {
+font: normal normal 900 64px/70px Segoe UI;
+width: 93%;
+}
+@media (max-width: 600px) {
+font: normal normal 900 34px/45px Segoe UI;
+width: 93%;
+}
 `
 const Button = styled.button`
 opacity:0.9;
@@ -24,6 +36,13 @@ width:170px;
 font-size:20px;
 border-radius:11px;
 background: ${(props) => props.color};
+@media (max-width: 600px) {
+width:140px;
+font-size:17px;
+margin-right:10px;
+padding: 15px;
+margin-bottom: 112px;
+}
 `
 const Bgchange = styled.span`
 margin:0 5px;
@@ -51,8 +70,8 @@ const HeroSection = () => {
     <HeroSectionContainer className='text-white' img={`/images/home${bg}.png`}>
             <Navbar></Navbar>
                 
-            <div className='px-24'>
-                <div className='pt-28'>
+            <div className='px-4 sm:px-12 xl:px-24 '>
+                <div className='pt-16 w-36 md:w-64'>
                     <Image src='/images/foosion-home-logo.png' width={291} height={117} alt="go" ></Image>
                 </div>
 
@@ -62,7 +81,7 @@ const HeroSection = () => {
                   <Button color='#FFD500'>Join Us</Button>
                 </Link>
 
-              <div className='pt-28 text-center pb-10'>
+              <div className='hidden md:flex pt-28 text-center pb-10'>
               <Bgchange onClick={() => setBg(1)} className={ bg === 1 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
               <Bgchange onClick={() => setBg(2)} className={ bg === 2 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
               <Bgchange onClick={() => setBg(3)} className={ bg === 3 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>

@@ -13,6 +13,9 @@ letter-spacing:1px;
 &:last-child {
     margin-top: 30px;
 }
+@media (max-width: 550px) {
+  margin-right:25px;
+}
 `
 const Button = styled.button`
 background: black;
@@ -24,11 +27,11 @@ width:190px;
 const HamMenu = styled.div`
     display: flex;
     margin: 10px 0px 10px 7px;
-    width: 35px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     background: white;
     &:nth-child(2){
-        width: 25px;
+        width: 20px;
     }
     @media (max-width: 1024px) {
         margin: 10px 0px 10px 7px;
