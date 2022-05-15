@@ -60,14 +60,14 @@ const Retailers = () => {
         <div className='flex'>
           
           <div> 
-            <Input type='text' width='575px' placeholder='Name'  onChange={handleChange} value={retailer.name}/>
+            <Input type='text' width='575px' placeholder='Name'name="name"  onChange={handleChange} value={retailer.name}/>
           </div>
           <div>
-            <Input width='250px' type='text' placeholder='Working Hours' className='ml-24' onChange={handleChange} value={retailer.workingHours} />
+            <Input width='250px' type='text' placeholder='Working Hours' name="workingHours" className='ml-24' onChange={handleChange} value={retailer.workingHours} />
           </div>
         
           <div className='relative'>
-            <Select width='275px' className='ml-20' onChange={handleChange} value={retailer.recipes}>
+            <Select width='275px' className='ml-20' name="recipes" onChange={handleChange} value={retailer.recipes}>
               <Option value="">Recipes</Option>
               <Option>Crop Type2s</Option>
               <Option>Crop Type3s</Option>
@@ -78,17 +78,17 @@ const Retailers = () => {
         </div>
 
         <div className='pt-10 flex'>
-          <Input width="575px" placeholder='Email Address' onChange={handleChange} value={retailer.email}/>
-          <Input width="450px" placeholder='Items Sold' className='ml-24' onChange={handleChange} value={retailer.itemsSold}/>
+          <Input width="575px" placeholder='Email Address' name="email" onChange={handleChange} value={retailer.email}/>
+          <Input width="450px" placeholder='Items Sold' name="itemsSold" className='ml-24' onChange={handleChange} value={retailer.itemsSold}/>
         </div>
 
         <div className='pt-10 flex'>
           <div>
-            <Input width="350px" placeholder='Tel Phone' onChange={handleChange} value={retailer.phone}/>
+            <Input width="350px" placeholder='Tel Phone' name="phone" onChange={handleChange} value={retailer.phone}/>
           </div>
           
           <div className='relative'>
-            <Select width='200px' className='ml-8' onChange={handleChange} value={retailer.yield}>
+            <Select width='200px' className='ml-8' name="yield" onChange={handleChange} value={retailer.yield}>
               <Option value="">Yield / Month</Option>
               <Option>Crop Type2s</Option>
               <Option>Crop Type3s</Option>
@@ -99,7 +99,7 @@ const Retailers = () => {
           <div className='relative ml-24'>
             <label class="custom-file-upload">
               <img src="/images/interface/upload.svg" alt='icon' className='absolute top-1/3 right-8 w-10' />
-              <input type="file" onChange={handleChange} value={retailer.identity}/>
+              <input type="file" onChange={handleChange} name="identity" value={retailer.identity}/>
               Means of Identification
            </label>
           </div>       
