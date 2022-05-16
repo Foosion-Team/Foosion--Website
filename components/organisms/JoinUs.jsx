@@ -29,7 +29,7 @@ border-radius: 36px;
 `
 const Button = styled.button`
 font: normal normal 600 20px/30px Segoe UI;
-width:100px;
+width:150px;
 border-radius: 36px;
 height: 65px;
 `

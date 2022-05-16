@@ -55,7 +55,7 @@ const NavbarSecondary = () => {
            </div>
        </Link>
         
-        <ul className='flex text-white align-middle justify-end'>
+        <ul className='flex text-black align-middle justify-end'>
             <ul className='hidden xl:flex align-middle justify-end'>
               <List>About us</List>
               <List>Vendors</List>
