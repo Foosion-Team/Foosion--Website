@@ -14,8 +14,8 @@ letter-spacing:1px;
 &:last-child {
     margin-top: 20px;
 }
-@media (max-width: 550px) {
-  margin-right:25px;
+@media (max-width: 1024px) {
+  margin-right:10px;
 }
 `
 const Button = styled.button`
@@ -29,7 +29,7 @@ const HamMenu = styled.div`
     display: flex;
     margin: 10px 0px 10px 7px;
     width: 35px;
-    height: 4px;
+    height: 2px;
     background: black;
     &:nth-child(2){
         width: 25px;
@@ -38,19 +38,19 @@ const HamMenu = styled.div`
         margin: 10px 0px 10px 7px;
     }
     @media (max-width: 550px) {
-        margin: 10px 0px 10px 10px;
+        margin: 10px 0px 10x 10px;
     }
 `
 const NavbarSecondary = () => {
     const [show, setShow] = useState(false)
   return (
     <div>
-      
       { show &&  <MobileMenu close={setShow}></MobileMenu> }
+
         <NavbarContainer className='flex align-middle justify-between items-center'>
 
        <Link href='/'>
-           <div className='pt-5 cursor-pointer'>
+           <div className='pt-5 cursor-pointer w-24 xl:w-44'>
                <Image src='/images/foosion-home.png' width={180} height={60} alt="go" objectFit='contain'></Image>
            </div>
        </Link>

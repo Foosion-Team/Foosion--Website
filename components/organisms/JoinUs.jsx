@@ -10,6 +10,9 @@ background: #F7F7F7 0% 0% no-repeat padding-box;
 `
 const FirstHeadingText = styled.h1`
 font: normal normal bold 37px/60px Segoe UI;
+@media (max-width: 1024px) {
+font: normal normal bold 25px/30px Segoe UI;
+}
 `
 const SecondHeadingText = styled.h2`
 font: normal normal 600 20px/30px Segoe UI;
@@ -18,10 +21,15 @@ color: ${(props) => props.color};
 const ButtonContainer = styled.div`
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border-radius: 36px;
+@media (max-width: 1024px) {
+  display:flex;
+  justify-content:center;
+  width:fit-content;
+  margin:30px auto 0;
 `
 const Button = styled.button`
 font: normal normal 600 20px/30px Segoe UI;
-width:150px;
+width:100px;
 border-radius: 36px;
 height: 65px;
 `
@@ -51,13 +59,13 @@ const JoinUs = () => {
   return (
     <div>
       
-      <div className='px-16 pb-5'>
+      <div className='px-9 xl:px-16 pb-5'>
         <NavbarSecondary></NavbarSecondary>
       </div>
 
       <FormContainer className='pt-8'>
-       <div className='px-28'>
-        <div className='flex justify-between items-center'>
+       <div className='px-10 xl:px-28'>
+        <div className='xl:flex justify-between items-center'>
          <div>
           <FirstHeadingText>Set up Your Foosion Account</FirstHeadingText>
           <SecondHeadingText color='#909090'>You've been invited to join the Foosion Community Network</SecondHeadingText>
