@@ -59,7 +59,7 @@ const JoinUs = () => {
   return (
     <div>
       
-      <div className='px-9 xl:px-16 pb-5'>
+      <div>
         <NavbarSecondary></NavbarSecondary>
       </div>
 

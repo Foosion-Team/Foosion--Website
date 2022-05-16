@@ -47,7 +47,7 @@ const NavbarSecondary = () => {
     <div>
       { show &&  <MobileMenu close={setShow}></MobileMenu> }
 
-        <NavbarContainer className='flex align-middle justify-between items-center'>
+        <NavbarContainer className='flex align-middle justify-between items-center px-9 xl:px-16 pb-5'>
 
        <Link href='/'>
            <div className='pt-5 cursor-pointer w-24 xl:w-44'>
