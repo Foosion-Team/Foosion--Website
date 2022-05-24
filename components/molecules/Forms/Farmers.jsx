@@ -86,7 +86,7 @@ const Farmers = () => {
   return (
     <div>
       
-       <form className='px-5 md:px-24 lg:px-44 pt-10'>
+       <form className='px-5 md:px-24 lg:px-28 pt-10'>
         <div className='xl:flex'>
           
           <div> 
@@ -99,8 +99,9 @@ const Farmers = () => {
           <div className='relative'>
             <Select width='275px' className='xl:ml-20' name="cropType" onChange={handleChange} value={farmer.cropType}>
               <Option value="">Crop Type</Option>
-              <Option>Crop Type2s</Option>
-              <Option>Crop Type3s</Option>
+              <Option>Annual / Yearly</Option>
+              <Option>Perennial / 2 Years</Option>
+              <Option>Biennial / Other Years</Option>
             </Select>
             <img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
           </div>
@@ -120,15 +121,16 @@ const Farmers = () => {
           <div className='relative'>
             <Select width='200px' className='xl:ml-8' name="yield" onChange={handleChange} value={farmer.yield}>
               <Option value="">Yield / Month</Option>
-              <Option>Crop Type2s</Option>
-              <Option>Crop Type3s</Option>
+              <Option>50,000 Units</Option>
+              <Option>100,000 Units</Option>
+              <Option>434,000 Units</Option>
             </Select>
-            <img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
+            <img src="/images/interface/option-select.png" alt='icon' className='absolute  top-9 right-5 w-4' />
           </div>
 
           <div className='relative xl:ml-24 w-full'>
             <CustomFileupload>
-              <img src="/images/interface/upload.svg" alt='icon' className='absolute top-1/3 right-8 w-10' />
+              <img src="/images/interface/upload.svg" alt='icon' className='absolute  top-9 right-5 w-4' />
               <input type="file" onChange={handleChange} name="identity" value={farmer.identity}/>
               Means of Identification
            </CustomFileupload>

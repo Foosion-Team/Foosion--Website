@@ -80,7 +80,7 @@ const HeroSection = () => {
   }, [])
 
   return (
-    <HeroSectionContainer className='text-white' img={`/images/home${bg}.jpg`}>
+    <HeroSectionContainer className='text-white' img={`/images/home${bg}.jpeg`}>
             <Navbar></Navbar>
                 
             <div className='px-4 sm:px-12 xl:px-24'>
@@ -95,14 +95,14 @@ const HeroSection = () => {
                 </Link>
 
               <div className='hidden md:flex pt-28 text-center pb-10'>
-              <Bgchange onClick={() => setBg(1)} className={ bg === 1 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-              <Bgchange onClick={() => setBg(2)} className={ bg === 2 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-              <Bgchange onClick={() => setBg(3)} className={ bg === 3 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-              <Bgchange onClick={() => setBg(4)} className={ bg === 4 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-              <Bgchange onClick={() => setBg(5)} className={ bg === 5 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-              <Bgchange onClick={() => setBg(6)} className={ bg === 6 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-              <Bgchange onClick={() => setBg(7)} className={ bg === 7 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-              <Bgchange onClick={() => setBg(8)} className={ bg === 8 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(1)} className={ bg === 1 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(2)} className={ bg === 2 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(3)} className={ bg === 3 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(4)} className={ bg === 4 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(5)} className={ bg === 5 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(6)} className={ bg === 6 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(7)} className={ bg === 7 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
+                <Bgchange onClick={() => setBg(8)} className={ bg === 8 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
               </div>
             
             </div>
