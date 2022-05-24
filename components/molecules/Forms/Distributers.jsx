@@ -86,7 +86,7 @@ const Distributors = () => {
   return (
     <div>
       
-     <form className='px-5 md:px-24 lg:px-44 pt-10'>
+     <form className='px-5 md:px-24 lg:px-28 pt-10'>
         <div className='xl:flex'>
           
           <div> 
@@ -99,8 +99,9 @@ const Distributors = () => {
           <div className='relative'>
             <Select width='275px' className='xl:ml-20' name="transportType" onChange={handleChange} value={distributor.transportType}>
               <Option value="">Transport Type</Option>
-              <Option>Crop Type2s</Option>
-              <Option>Crop Type3s</Option>
+              <Option>Cooling Van</Option>
+              <Option>Live Stock Van</Option>
+              <Option>Food Stock Van</Option>
             </Select>
             <img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
           </div>
@@ -118,10 +119,11 @@ const Distributors = () => {
           </div>
           
           <div className='relative'>
-            <Select width='200px' className='xl:ml-8' name="yield" onChange={handleChange} value={distributor.yield}>
+            <Select width='190px' className='xl:ml-8' name="yield" onChange={handleChange} value={distributor.yield}>
               <Option value="">Yield / Month</Option>
-              <Option>Crop Type2s</Option>
-              <Option>Crop Type3s</Option>
+              <Option>50,000 Units</Option>
+              <Option>100,000 Units</Option>
+              <Option>434,000 Units</Option>
             </Select>
             <img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
           </div>
