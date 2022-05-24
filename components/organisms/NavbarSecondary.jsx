@@ -50,8 +50,8 @@ const NavbarSecondary = () => {
         <NavbarContainer className='flex align-middle justify-between items-center px-9 xl:px-16 pb-5'>
 
        <Link href='/'>
-           <div className='pt-5 cursor-pointer w-24 xl:w-44'>
-               <Image src='/images/foosion-home.png' width={180} height={60} alt="go" objectFit='contain'></Image>
+           <div className='pt-5 cursor-pointer w-28 xl:w-52'>
+               <Image src='/images/foosion-secondary-logo.png' width={180} height={60} alt="go" objectFit='contain'></Image>
            </div>
        </Link>
         
