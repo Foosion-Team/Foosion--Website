@@ -80,7 +80,7 @@ const HeroSection = () => {
   }, [])
 
   return (
-    <HeroSectionContainer className='text-white' img={`/images/home${bg}.jpg`}>
+    <HeroSectionContainer className='text-white' img={`/images/home${bg}.jpeg`}>
             <Navbar></Navbar>
                 
             <div className='px-4 sm:px-12 xl:px-24'>
