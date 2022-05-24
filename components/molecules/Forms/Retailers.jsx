@@ -125,12 +125,12 @@ const Retailers = () => {
               <Option>100,000 Units</Option>
               <Option>434,000 Units</Option>
             </Select>
-            <img src="/images/interface/option-select.png" alt='icon' className='absolute top-0 right-5 w-10' />
+            <img src="/images/interface/option-select.png" alt='icon' className='absolute top-9 right-5 w-4' />
           </div>
 
           <div className='relative xl:ml-24 w-full'>
             <CustomFileupload class="custom-file-upload">
-              <img src="/images/interface/upload.svg" alt='icon' className='absolute top-1/2 right-8 w-10' />
+              <img src="/images/interface/upload.svg" alt='icon' className='absolute  top-9 right-5 w-4' />
               <input type="file" onChange={handleChange} name="identity" value={retailer.identity}/>
               Means of Identification
            </CustomFileupload>
