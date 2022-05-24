@@ -10,21 +10,33 @@ height:100vh;
 background:linear-gradient(rgba(51, 43, 0, 0.5), rgba(51, 43, 0, 0.5)), url(${props => props.img}) repeat;
 transition:background 3s ease-in-out;
 background-size:cover;
+@media (max-width: 800px) {
+height:100%;
+}
 `
 const SecondHeadingText = styled.h2`
-font: normal normal 900 85px/85px Segoe UI;
+font: normal normal 900 85px/95px Segoe UI;
 width:67%;
 @media (max-width: 1024px) {
-font: normal normal 900 75px/80px Segoe UI;
+font: normal normal 900 75px/85px Segoe UI;
 width: 85%;
 }
 @media (max-width: 800px) {
-font: normal normal 900 64px/70px Segoe UI;
+font: normal normal 900 60px/70px Segoe UI;
 width: 93%;
 }
 @media (max-width: 600px) {
-font: normal normal 900 34px/45px Segoe UI;
+font: normal normal 900 35px/45px Segoe UI;
 width: 93%;
+}
+`
+const LogoImage = styled.div`
+width:300px;
+@media (max-width: 1024px) {
+width:250px;  
+}
+@media (max-width: 600px) {
+width:150px;
 }
 `
 const Button = styled.button`
@@ -39,6 +51,7 @@ background: ${(props) => props.color};
 @media (max-width: 600px) {
 width:140px;
 font-size:17px;
+margin-top:20px;
 margin-right:10px;
 padding: 15px;
 margin-bottom: 112px;
@@ -70,10 +83,10 @@ const HeroSection = () => {
     <HeroSectionContainer className='text-white' img={`/images/home${bg}.jpg`}>
             <Navbar></Navbar>
                 
-            <div className='px-4 sm:px-12 xl:px-24 '>
-                <div className='pt-24 w-36 md:w-64'>
-                    <Image src='/images/foosion-home-logo.png' width={291} height={117} alt="go" ></Image>
-                </div>
+            <div className='px-4 sm:px-12 xl:px-24'>
+                <LogoImage className='pt-6 md:pt-28 w-36 md:w-64 '>
+                    <Image src='/images/foosion-home-logo.png' width={291} height={117} alt="foosion logo" ></Image>
+                </LogoImage>
 
                 <SecondHeadingText>{text[bg]}</SecondHeadingText>
                 <Button color='black'>Learn More</Button>
