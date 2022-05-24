@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 import Navbar from '../organisms/Navbar'
 const HeroSectionContainer = styled.div`
-height:100%;
-background:linear-gradient(rgba(51, 43, 0, 0.4), rgba(51, 43, 0, 0.4)), url(${props => props.img}) repeat;
-transition:all 3s ease-in-out;
+height:100vh;
+background:linear-gradient(rgba(51, 43, 0, 0.5), rgba(51, 43, 0, 0.5)), url(${props => props.img}) repeat;
+transition:background 3s ease-in-out;
 background-size:cover;
 `
 const SecondHeadingText = styled.h2`
@@ -55,23 +55,23 @@ const HeroSection = () => {
 
   const [bg, setBg] = useState(1)
 
-  const text = ['nil', 'A Thriving Food Network', "A Mix of the Market", "Restocking Shelves", "Sourcing From the Ground Up","Connectong you to Stores Round you", "Connectong You to Stores Round You", "All Fresh Fruits", "Making Agriculture Smarter"]
+  const text = ['nil', 'A Thriving Food Network', "A Complete Mix of the Market", "Regulating Food Supply", "Sourcing From the Ground Up","Connecting You to Stores Round You", "Connecting You to Stores Round You", "All Fresh Fruits and Vegetables", "Making Agriculture Smarter"]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setBg(bg => bg + 1 > 8 ? 1 : bg + 1)
-    }, 3000)
+    }, 5000)
     return () => {
       clearInterval(interval)
     }
   }, [])
 
   return (
-    <HeroSectionContainer className='text-white' img={`/images/home${bg}.png`}>
+    <HeroSectionContainer className='text-white' img={`/images/home${bg}.jpg`}>
             <Navbar></Navbar>
                 
             <div className='px-4 sm:px-12 xl:px-24 '>
-                <div className='pt-16 w-36 md:w-64'>
+                <div className='pt-24 w-36 md:w-64'>
                     <Image src='/images/foosion-home-logo.png' width={291} height={117} alt="go" ></Image>
                 </div>
 
@@ -90,7 +90,7 @@ const HeroSection = () => {
               <Bgchange onClick={() => setBg(6)} className={ bg === 6 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
               <Bgchange onClick={() => setBg(7)} className={ bg === 7 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
               <Bgchange onClick={() => setBg(8)} className={ bg === 8 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
-            </div>
+              </div>
             
             </div>
     </HeroSectionContainer>
