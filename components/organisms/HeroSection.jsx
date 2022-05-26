@@ -10,7 +10,7 @@ height:100vh;
 background:linear-gradient(rgba(51, 43, 0, 0.5), rgba(51, 43, 0, 0.5)), url(${props => props.img}) repeat;
 transition:background 3s ease-in-out;
 background-size:cover;
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 height:100%;
 }
 `

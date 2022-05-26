@@ -18,12 +18,18 @@ cursor: pointer;
 :hover {
     color: var(--FooterTextFour);
 }
+@media (max-width:600px) {
+font: normal normal bold 30px/60px Segoe UI;
+}
 `
 
 const FooterList = styled.li`
 font: normal normal 400 21px/60px Segoe UI;
 color: var(--FooterTextThree);
 cursor: pointer;
+@media (max-width:600px) {
+font: normal normal 400 30px/60px Segoe UI;
+}
 `
 const Line = styled.div`
 background:white;
@@ -40,17 +46,20 @@ margin-left:20px;
 :nth-child(1){
 margin-left:0px;
 }
+@media (max-width:600px) {
+    margin-left: 0px;
+}
 `
 const Footer = () => {
   return (
-        <FooterContainer className='px-11'>
+        <FooterContainer className='px-5 xl:px-11'>
             <FirstText className=''>Foosion, A <b>New</b> Way to Health Living</FirstText>
 
             <Line></Line>
 
 
-            <div className='flex justify-between pb-16 pt-2'>
-                <ul className='flex items-center flex-col'>
+            <div className='lg:flex justify-between pb-16 pt-2'>
+                <ul className='lg:flex items-center flex-col'>
                     <FooterListHead>
                          <Image src='/images/foosion-secondary-logo.png' width={180} height={60} alt="go" objectFit='contain'></Image>
                     </FooterListHead>
@@ -97,7 +106,7 @@ const Footer = () => {
             <Line></Line>
 
             <div className='py-7'>
-                <ul className='flex'>
+                <ul className='lg:flex'>
                     <FooterBottomList>2022 Foosion</FooterBottomList>
                     <FooterBottomList>User Agreement</FooterBottomList>
                     <FooterBottomList>Privacy Policy</FooterBottomList>
