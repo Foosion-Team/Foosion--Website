@@ -7,7 +7,12 @@ body {
 font-family: 'Raleway', sans-serif;
 }
 :root {
+  --FooterText: #979797;
+  --FooterTextTwo: #000000;
+  --FooterTextThree: #9F9F9F;
+  --FooterTextFour: #FFD500;
 }
+
 a {
   color: inherit;
   text-decoration: none;
