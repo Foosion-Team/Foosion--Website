@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import MobileMenu from '../components/molecules/MobileMenu'
+import Footer from '../components/organisms/Footer'
 
 //COMPONENTS
 import JoinUs from '../components/organisms/JoinUs'
@@ -16,6 +17,7 @@ export default function Form() {
 
             <JoinUs></JoinUs>
 
+            <Footer></Footer>
         </div>
     )
 }

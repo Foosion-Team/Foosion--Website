@@ -10,7 +10,7 @@ height:100vh;
 background:linear-gradient(rgba(51, 43, 0, 0.5), rgba(51, 43, 0, 0.5)), url(${props => props.img}) repeat;
 transition:background 3s ease-in-out;
 background-size:cover;
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 height:100%;
 }
 `
@@ -80,7 +80,7 @@ const HeroSection = () => {
   }, [])
 
   return (
-    <HeroSectionContainer className='text-white' img={`/images/home${bg}.jpeg`}>
+    <HeroSectionContainer className='text-white' img={`/images/slider/home${bg}.jpeg`}>
             <Navbar></Navbar>
                 
             <div className='px-4 sm:px-12 xl:px-24'>
@@ -89,10 +89,12 @@ const HeroSection = () => {
                 </LogoImage>
 
                 <SecondHeadingText>{text[bg]}</SecondHeadingText>
-                <Button color='black'>Learn More</Button>
-                <Link href='/form'>
-                  <Button color='#FFD500'>Join Us</Button>
-                </Link>
+                <div className='pb-10'>
+                  <Button color='black'>Learn More</Button>
+                  <Link href='/form'>
+                    <Button color='#FFD500'>Join Us</Button>
+                  </Link>
+                </div>
 
               <div className='hidden md:flex pt-28 text-center pb-10'>
                 <Bgchange onClick={() => setBg(1)} className={ bg === 1 ? 'bg-yellow-500' : 'bg-white' }></Bgchange>
