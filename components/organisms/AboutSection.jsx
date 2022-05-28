@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 const AboutContainer = styled.section`
 & > *:nth-child(1) {
@@ -33,6 +34,25 @@ height: 320px;
 left: 250px;
 top:60px;
 `
+const Button = styled.button`
+opacity:0.9;
+margin-top:40px;
+margin-right:24px;
+padding: 20px;
+width:170px;
+font-size:20px;
+border-radius:11px;
+background: ${(props) => props.bg};
+color: ${(props) => props.color};
+@media (max-width: 600px) {
+width:140px;
+font-size:17px;
+margin-top:20px;
+margin-right:10px;
+padding: 15px;
+margin-bottom: 112px;
+}`
+
 const AboutSection = () => {
   return (
     <AboutContainer className='pt-52 pb-40 flex px-5 xl:px-12'>
@@ -50,6 +70,13 @@ const AboutSection = () => {
           are important mitigation measures in the global response to climate 
           change through complex food processing and food distribution systems.
         </ParagraphText>
+
+        <div className='pt-5'>
+          <Button bg='black' color='white'>Learn More</Button>
+          <Link href=''>
+            <Button bg='#FFD500' color='black'>Join Us</Button>
+          </Link>
+        </div>
 
       </div>
       <div className='flex relative'>
