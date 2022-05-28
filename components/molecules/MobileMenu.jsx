@@ -9,7 +9,7 @@ const NavbarContainer = styled.nav`
         backdrop-filter: blur(40px);
         text-align:center;
         height: 100vh;
-        z-index: 5;
+        z-index: 25;
         padding: 20px;
         width:100%;
         position: fixed;
