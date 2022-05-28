@@ -123,7 +123,7 @@ const AboutSection = () => {
           are important mitigation measures in the global response to climate 
           change through complex food processing and food distribution systems.
         </ParagraphText>
-        <div className='flex justify-center pt-4'>
+        <div className='flex justify-center pt-4 sm:hidden'>
           <Imgs src='/images/spoons-180.png' className='lg:z-10 -ml-2 md:-ml-0'/>
         </div>
         <div className='pt-2'>
