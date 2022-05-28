@@ -3,15 +3,15 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
 
-
 import Navbar from '../organisms/Navbar'
+
 const HeroSectionContainer = styled.div`
 height:100vh;
 background:linear-gradient(rgba(51, 43, 0, 0.5), rgba(51, 43, 0, 0.5)), url(${props => props.img}) repeat;
 transition:background 3s ease-in-out;
 background-size:cover;
 @media (max-width: 900px) {
-height:100%;
+height:100vh;
 }
 `
 const SecondHeadingText = styled.h2`
@@ -83,12 +83,13 @@ const HeroSection = () => {
     <HeroSectionContainer className='text-white' img={`/images/slider/home${bg}.jpeg`}>
             <Navbar></Navbar>
                 
-            <div className='px-4 sm:px-12 xl:px-24'>
+            <div className='px-4 sm:px-12 xl:px-24 '>
                 <LogoImage className='pt-6 md:pt-28 w-36 md:w-64 '>
                     <Image src='/images/foosion-home-logo.png' width={291} height={117} alt="foosion logo" ></Image>
                 </LogoImage>
 
                 <SecondHeadingText>{text[bg]}</SecondHeadingText>
+
                 <div className='pb-10'>
                   <Button color='black'>Learn More</Button>
                   <Link href='/form'>
