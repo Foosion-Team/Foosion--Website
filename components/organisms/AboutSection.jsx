@@ -28,14 +28,6 @@ overflow:hidden;
     flex: 1 1 25%;
   }
 }
-@media (max-width: 600px) {
-& > *:nth-child(1) {
-    flex: 1 1 100%;
-  }
-& > *:nth-child(2) {
-    flex: 0 0 0;
-  }
-}
 `
 const HeadingText = styled.h1`
 font: normal normal 900 48px/72px Segoe UI;
@@ -52,6 +44,7 @@ padding: 0 0 34px 0;
 }
 @media (max-width: 600px) {
 padding: 0 0 15px 0;
+font: normal normal 900 27px/45px Segoe UI;
 }
 `
 const ParagraphText = styled.p`
@@ -71,8 +64,12 @@ const Imgs = styled.img`
 width: 350px;
 height: 500px;
 @media (max-width: 1024px) {
-  width: 250px;
+width: 250px;
 height: 400px;
+}
+@media (max-width: 600px) {
+width: 350px;
+height: 250px;
 }
 `
 const ImgsTwo = styled.img`
@@ -111,7 +108,7 @@ margin-bottom: 112px;
 
 const AboutSection = () => {
   return (
-    <AboutContainer className='pt-12 md:pt-36 xl:pt-52 pb-40 flex items-center px-4 sm:px-12 xl:px-28'>
+    <AboutContainer className='pt-12 md:pt-36 xl:pt-52 pb-40 md:flex md:items-center px-4 sm:px-12 xl:px-28'>
       <div>
         <HeadingText>Increasing <Span color='#FFD500'> Food Supply</Span> <Span color='#494949'>with Technology</Span></HeadingText>
 
@@ -126,7 +123,9 @@ const AboutSection = () => {
           are important mitigation measures in the global response to climate 
           change through complex food processing and food distribution systems.
         </ParagraphText>
-
+        <div className='flex justify-center pt-4'>
+          <Imgs src='/images/spoons-180.png' className='lg:z-10 -ml-2 md:-ml-0'/>
+        </div>
         <div className='pt-2'>
           <Button bg='black' color='white'>Learn More</Button>
           <Link href=''>
@@ -136,8 +135,8 @@ const AboutSection = () => {
 
       </div>
       <div className='lg:flex relative'>
-        <Imgs src='/images/spoons-small.png' className='lg:z-10'/>
-        <Imgs src='/images/louis-hansel.png' className='lg:mt-44 lg:z-10 lg:-ml-24'/>
+        <Imgs src='/images/spoons-small.png' className='lg:z-10 hidden md:block' />
+        <Imgs src='/images/louis-hansel.png' className='hidden md:block lg:mt-44 lg:z-10 lg:-ml-24'/>
         <ImgsTwo src='/images/interface/about-rect.png' className='absolute' />
       </div>
     </AboutContainer>
