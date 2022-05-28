@@ -7,6 +7,8 @@ body {
 font-family: 'Raleway', sans-serif;
 }
 :root {
+  --AboutText: #494949;
+  --AboutTextTwo: #727272;
   --FooterText: #979797;
   --FooterTextTwo: #000000;
   --FooterTextThree: #9F9F9F;
