@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState }  from 'react'
 import styled from 'styled-components'
 const FooterContainer = styled.footer`
 `
@@ -29,6 +29,7 @@ color: var(--FooterTextThree);
 cursor: pointer;
 @media (max-width:600px) {
 font: normal normal 400 30px/60px Segoe UI;
+display: none;
 }
 `
 const Line = styled.div`
@@ -51,6 +52,7 @@ margin-left:0px;
 }
 `
 const Footer = () => {
+    const [show, setShow] = useState(false)
   return (
         <FooterContainer className='px-5 xl:px-11'>
             <FirstText className=''>Foosion, A <b>New</b> Way to Health Living</FirstText>
@@ -64,10 +66,10 @@ const Footer = () => {
                          <Image src='/images/foosion-secondary-logo.png' width={180} height={60} alt="go" objectFit='contain'></Image>
                     </FooterListHead>
                     <li className='-mt-5'>
-                        <Image src="/images/google-play-badge-US.svg" width={100} height={100} objectFit='contain' alt="footer-logo" />
+                        <Image src="/images/footer/google-play-badge-US.svg" width={100} height={100} objectFit='contain' alt="footer-logo" />
                     </li>
                     <li className='-mt-10'>
-                        <Image src="/images/Download_on_the_App_Store_Badge_US-UK.svg" width={100} height={100} objectFit='contain' alt="footer-logo" />
+                        <Image src="/images/footer/Download_on_the_App_Store_Badge_US-UK.svg" width={100} height={100} objectFit='contain' alt="footer-logo" />
                     </li>
                 </ul>
                 <ul>
@@ -97,9 +99,12 @@ const Footer = () => {
                     <FooterList>GreenHouses</FooterList>
                 </ul>
                 <ul className='pr-10'>
-                    <FooterListHead>Find Us Here</FooterListHead>
-                    <FooterList>English</FooterList>
-                    <FooterList>Help</FooterList>
+                    <FooterListHead className='flex items-center'> 
+                            <Image src='/images/footer/location-arrow.png' width={25} height={25} alt="go" objectFit='contain'></Image> <span className='ml-2'>Find Us Here</span> </FooterListHead>
+                    <FooterList className='flex items-center'>
+                            <Image src='/images/footer/material-language.png' width={25} height={25} alt="go" objectFit='contain'></Image> <span className='ml-2'>English</span> </FooterList>
+                    <FooterList className='flex items-center'>
+                            <Image src='/images/footer/ionic-ios-help-circle.png' width={25} height={25} alt="go" objectFit='contain'></Image> <span className='ml-2'>Help</span> </FooterList>
                 </ul>
             </div>
 
@@ -107,12 +112,12 @@ const Footer = () => {
 
             <div className='py-7'>
                 <ul className='lg:flex'>
-                    <FooterBottomList>2022 Foosion</FooterBottomList>
-                    <FooterBottomList>User Agreement</FooterBottomList>
+                    <FooterBottomList>©2022 Foosion. All rights reserved</FooterBottomList>
+                    {/* <FooterBottomList>User Agreement</FooterBottomList>
                     <FooterBottomList>Privacy Policy</FooterBottomList>
                     <FooterBottomList>Data Requests</FooterBottomList>
                     <FooterBottomList>Legal Bases</FooterBottomList>
-                    <FooterBottomList>Data Requests</FooterBottomList>
+                    <FooterBottomList>Data Requests</FooterBottomList> */}
                 </ul>
 
                 <div>
