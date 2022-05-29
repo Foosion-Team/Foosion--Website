@@ -81,7 +81,7 @@ const JoinUs = () => {
 
        { farmer && <Farmers></Farmers> }
        
-      { distributor && <Distributers></Distributers> } 
+       { distributor && <Distributers></Distributers> } 
 
        { retailer && <Retailers></Retailers> }
 
