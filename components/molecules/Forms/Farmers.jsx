@@ -67,6 +67,8 @@ const CustomFileupload = styled.label`
   margin-bottom:20px;  
 }
 `
+const Img = styled.img`
+`
 const Farmers = () => {
   const [farmer, setFarmer ] = useState({
     name: '',
@@ -103,7 +105,7 @@ const Farmers = () => {
               <Option>Perennial / 2 Years</Option>
               <Option>Biennial / Other Years</Option>
             </Select>
-            <img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
+            <Img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
           </div>
        
         </div>
@@ -125,12 +127,12 @@ const Farmers = () => {
               <Option>100,000 Units</Option>
               <Option>434,000 Units</Option>
             </Select>
-            <img src="/images/interface/option-select.png" alt='icon' className='absolute  top-9 right-5 w-4' />
+            <Img src="/images/interface/option-select.png" alt='icon' className='absolute  top-9 right-5 w-4' />
           </div>
 
           <div className='relative xl:ml-24 w-full'>
             <CustomFileupload>
-              <img src="/images/interface/upload.svg" alt='icon' className='absolute  top-9 right-5 w-4' />
+              <Img src="/images/interface/upload.svg" alt='icon' className='absolute  top-9 right-5 w-4' />
               <input type="file" onChange={handleChange} name="identity" value={farmer.identity}/>
               Means of Identification
            </CustomFileupload>
