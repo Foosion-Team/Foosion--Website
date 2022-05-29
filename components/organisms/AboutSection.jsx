@@ -56,10 +56,6 @@ text-align:justify;
 font: normal normal 400 21px/33px Segoe UI;
 width:100%;
 }
-@media (max-width: 600px) {
-font: normal normal 400 21px/33px Segoe UI;
-width:100%;
-}
 `
 const Span = styled.span`
 color: ${(props) => props.color}
@@ -113,6 +109,7 @@ margin-bottom: 112px;
 const AboutSection = () => {
   return (
     <AboutContainer className='pt-12 md:pt-36 xl:pt-52 pb-40 md:flex md:items-center px-4 sm:px-12 xl:px-28'>
+
       <div>
         <HeadingText>Increasing <Span color='#FFD500'> Food Supply</Span> <Span color='#494949'>with Technology</Span></HeadingText>
 
@@ -127,6 +124,7 @@ const AboutSection = () => {
           are important mitigation measures in the global response to climate 
           change through complex food processing and food distribution systems.
         </ParagraphText>
+    
         <div className='flex justify-center pt-4 sm:hidden'>
           <Imgs src='/images/spoons-180.png' className='lg:z-10 -ml-2 md:-ml-0'/>
         </div>
@@ -141,6 +139,7 @@ const AboutSection = () => {
       <div className='lg:flex relative'>
         <Imgs src='/images/spoons-small.png' className='lg:z-10 hidden md:block' />
         <Imgs src='/images/louis-hansel.png' className='hidden md:block lg:mt-44 lg:z-10 lg:-ml-24'/>
+
         <ImgsTwo src='/images/interface/about-rect.png' className='absolute' />
       </div>
     </AboutContainer>
