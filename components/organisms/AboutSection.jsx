@@ -52,6 +52,10 @@ font: normal normal 400 21px/32px Segoe UI;
 width:90%;
 color: var(--AboutTextTwo);
 text-align:justify;
+@media (max-width: 800px) {
+font: normal normal 400 21px/33px Segoe UI;
+width:100%;
+}
 @media (max-width: 600px) {
 font: normal normal 400 21px/33px Segoe UI;
 width:100%;

@@ -61,17 +61,18 @@ const Footer = () => {
 
 
             <div className='lg:flex justify-between pb-16 pt-2'>
-                <ul className='lg:flex items-center flex-col'>
+                <ul className='flex justify-start items-center lg:justify-start lg:flex-col'>
                     <FooterListHead>
                          <Image src='/images/foosion-secondary-logo.png' width={180} height={60} alt="go" objectFit='contain'></Image>
                     </FooterListHead>
-                    <li className='-mt-5'>
-                        <Image src="/images/footer/google-play-badge-US.svg" width={100} height={100} objectFit='contain' alt="footer-logo" />
+                    <li className='lg:-mt-5 mt-7'>
+                        <Image src="/images/footer/google-play-badge-US.svg" width={150} height={100} objectFit='contain' alt="footer-logo" />
                     </li>
-                    <li className='-mt-10'>
+                    <li className='lg:-mt-10 mt-7'>
                         <Image src="/images/footer/Download_on_the_App_Store_Badge_US-UK.svg" width={100} height={100} objectFit='contain' alt="footer-logo" />
                     </li>
                 </ul>
+                
                 <ul>
                     <FooterListHead>Join Us</FooterListHead>
                     <FooterList>Careers</FooterList>
