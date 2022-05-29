@@ -56,7 +56,7 @@ const CustomFileupload = styled.label`
   display: inline-block;
   background: white;
   color: #909090;
-  width: 575px;
+  width: 630px;
   height: 75px;
   border-radius: 13px;
   font: normal normal 600 18px/25px Segoe UI;
