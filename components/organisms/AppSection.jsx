@@ -36,7 +36,7 @@ const AppSection = () => {
 
         <LineHeader className='px-4 sm:px-12 xl:px-28 flex justify-between items-center'>
             <LineHeaderText>
-                <LineHeaderTextBold>Fossion</LineHeaderTextBold> Mobile
+                <LineHeaderTextBold>Foosion</LineHeaderTextBold> Mobile
             </LineHeaderText>
 
             <ul className='flex'>
