@@ -73,7 +73,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setBg(bg => bg + 1 > 8 ? 1 : bg + 1)
-    }, 5000)
+    }, 6000)
     return () => {
       clearInterval(interval)
     }

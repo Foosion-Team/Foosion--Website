@@ -56,7 +56,7 @@ const CustomFileupload = styled.label`
   display: inline-block;
   background: white;
   color: #909090;
-  width: 575px;
+  width: 630px;
   height: 75px;
   border-radius: 13px;
   font: normal normal 600 18px/25px Segoe UI;
@@ -66,6 +66,8 @@ const CustomFileupload = styled.label`
   width:100%;
   margin-bottom:20px;  
 }
+`
+const Img = styled.img`
 `
 const Distributors = () => {
   const [distributor, setDistributor ] = useState({
@@ -103,7 +105,7 @@ const Distributors = () => {
               <Option>Live Stock Van</Option>
               <Option>Food Stock Van</Option>
             </Select>
-            <img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
+            <Img src="/images/interface/option-select.png" alt='icon' className='absolute top-1/2 right-5 w-4' />
           </div>
        
         </div>
@@ -125,12 +127,12 @@ const Distributors = () => {
               <Option>100,000 Units</Option>
               <Option>434,000 Units</Option>
             </Select>
-            <img src="/images/interface/option-select.png" alt='icon' className='absolute  top-9 right-5 w-4' />
+            <Img src="/images/interface/option-select.png" alt='icon' className='absolute  top-9 right-5 w-4' />
           </div>
 
           <div className='relative xl:ml-24 w-full'>
             <CustomFileupload class="custom-file-upload">
-              <img src="/images/interface/upload.svg" alt='icon' className='absolute  top-9 right-5 w-4' />
+              <Img src="/images/interface/upload.svg" alt='icon' className='absolute  top-9 right-5 w-4' />
               <input type="file" onChange={handleChange} name="identity" value={distributor.identity}/>
               Means of Identification
            </CustomFileupload>

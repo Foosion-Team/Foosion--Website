@@ -68,7 +68,7 @@ const JoinUs = () => {
         <div className='xl:flex justify-between items-center'>
          <div>
           <FirstHeadingText>Set up Your Foosion Account</FirstHeadingText>
-          <SecondHeadingText color='#909090'>You've been invited to join the Foosion Community Network</SecondHeadingText>
+          <SecondHeadingText color='#909090'>You have been invited to join the Foosion Community Network</SecondHeadingText>
          </div>
 
          <ButtonContainer>
@@ -81,7 +81,7 @@ const JoinUs = () => {
 
        { farmer && <Farmers></Farmers> }
        
-      { distributor && <Distributers></Distributers> } 
+       { distributor && <Distributers></Distributers> } 
 
        { retailer && <Retailers></Retailers> }
 
