@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import CTA1 from '../components/molecules/CTA1'
+import CTA2 from '../components/molecules/CTA2'
 import AboutSection from '../components/organisms/AboutSection'
 import AppSection from '../components/organisms/AppSection'
+import FarmersSection from '../components/organisms/FarmersSection'
 import Footer from '../components/organisms/Footer'
 
 //COMPONENTS
 import HeroSection from '../components/organisms/HeroSection'
+import VendorsSection from '../components/organisms/VendorsSection'
 
 export default function Home() {
   return (
@@ -21,6 +25,14 @@ export default function Home() {
       <AboutSection></AboutSection>
 
       <AppSection></AppSection>
+
+      <VendorsSection></VendorsSection>
+
+      <CTA1></CTA1>
+
+      <FarmersSection></FarmersSection>
+
+      <CTA2></CTA2>
 
       <Footer></Footer>
     </div>
