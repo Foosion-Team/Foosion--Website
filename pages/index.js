@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import AboutSection from '../components/organisms/AboutSection'
+import AppSection from '../components/organisms/AppSection'
 import Footer from '../components/organisms/Footer'
 
 //COMPONENTS
@@ -18,6 +19,8 @@ export default function Home() {
       <HeroSection></HeroSection>
 
       <AboutSection></AboutSection>
+
+      <AppSection></AppSection>
 
       <Footer></Footer>
     </div>
