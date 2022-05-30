@@ -11,10 +11,16 @@ background: transparent linear-gradient(270deg, #FFF950 0%, #00F0C8 100%) 0% 0% 
 height:100px;
 `
 const LineHeaderText = styled.h1`
-font: normal normal 400 48px/65px Segoe UI;
+font: normal normal 400 48px/65px Raleway;
+@media (max-width: 768px) {
+font: normal normal 400 16px/16px Raleway;
+}
 `
 const LineHeaderTextBold = styled.span`
-font: normal normal 900 48px/65px Segoe UI;
+font: normal normal 900 48px/65px Raleway;
+@media (max-width: 768px) {
+font: normal normal 900 16px/16px Raleway;
+}
 `
 const Div = styled.div`
 ::-webkit-scrollbar {
@@ -44,7 +50,7 @@ const AppSection = () => {
         </LineHeader>
         
         
-        <Div className='flex justify-between px-4 sm:px-12 xl:px-28 pt-32 overflow-x-scroll'>
+        <Div className='flex justify-between px-4 sm:px-12 xl:px-28 pt-32 pb-28 overflow-x-scroll'>
             {
                 App.map(x => {
                     return (
