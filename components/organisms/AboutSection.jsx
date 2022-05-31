@@ -108,7 +108,7 @@ margin-bottom: 112px;
 
 const AboutSection = () => {
   return (
-    <AboutContainer className='pt-12 md:pt-36 xl:pt-52 pb-40 md:flex md:items-center px-4 sm:px-12 xl:px-28'>
+    <AboutContainer className='pt-12 md:pt-36 xl:pt-52 md:pb-40 md:flex md:items-center px-4 sm:px-12 xl:px-28'>
 
       <div>
         <HeadingText>Increasing <Span color='#FFD500'> Food Supply</Span> <Span color='#494949'>with Technology</Span></HeadingText>

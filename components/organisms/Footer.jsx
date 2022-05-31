@@ -55,7 +55,7 @@ const Footer = () => {
     const [show, setShow] = useState(false)
   return (
         <FooterContainer className='px-5 xl:px-11'>
-            <FirstText className=''>Foosion, A <b>New</b> Way to Health Living</FirstText>
+            <FirstText className=''>Foosion, A <b>Making</b> food affordable for everyone</FirstText>
 
             <Line></Line>
 

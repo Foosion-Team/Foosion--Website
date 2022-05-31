@@ -9,6 +9,9 @@ body {
 }
 
 :root {
+  --Color1: #009035;
+  --Color2:#E6E6E6;
+  --Color3: #862800;
   --AboutText: #494949;
   --AboutTextTwo: #727272;
   --FooterText: #979797;
