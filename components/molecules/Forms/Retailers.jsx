@@ -97,7 +97,7 @@ const Retailers = () => {
           </div>
 
           <div className='relative ml-24'>
-            <label class="custom-file-upload">
+            <label className="custom-file-upload">
               <img src="/images/interface/upload.svg" alt='icon' className='absolute top-1/3 right-8 w-10' />
               <input type="file" onChange={handleChange} name="identity" value={retailer.identity}/>
               Means of Identification

@@ -52,6 +52,8 @@ const Distributors = () => {
     const name = e.target.name
     const value = e.target.value
     setDistributor({...distributor, [name]: value})
+
+    console.log(name, value);
   }
   return (
     <div>
@@ -97,7 +99,7 @@ const Distributors = () => {
           </div>
 
           <div className='relative ml-24'>
-            <label class="custom-file-upload">
+            <label className="custom-file-upload">
               <img src="/images/interface/upload.svg" alt='icon' className='absolute top-1/3 right-8 w-10' />
               <input type="file" onChange={handleChange} name="identity" value={distributor.identity}/>
               Means of Identification
