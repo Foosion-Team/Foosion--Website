@@ -84,6 +84,8 @@ const Distributors = () => {
     const name = e.target.name
     const value = e.target.value
     setDistributor({...distributor, [name]: value})
+
+    console.log(name, value);
   }
   return (
     <div>
